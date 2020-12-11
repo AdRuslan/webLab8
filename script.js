@@ -8,15 +8,10 @@ for (let i = 1; i < sheepCount + 1; i++) {
 
 console.log(sumStr);
 
-
-
 //Task 2
 for (let i = 0; i < 16; i++) {
   console.log(`${i} ${i % 2 == 0 ? "четное" : "нечетное"}`);
 }
-
-
-
 
 //Task 4
 let num1 = 74.7,
@@ -61,3 +56,16 @@ if (num1 > num2 && num1 > num3) {
     console.log(`${num2}, ${num1}, ${num3}`);
   }
 }
+
+//Task 5
+let numbers = [];
+maxValue = -Infinity;
+
+for (i = 0; i < 5; i++) {
+  numbers.push(prompt(`Введите число ${i + 1}`));
+  if (numbers[i] > maxValue) {
+    maxValue = numbers[i];
+  }
+}
+
+console.log(maxValue)
